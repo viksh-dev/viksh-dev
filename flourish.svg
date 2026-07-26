@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="50" viewBox="0 0 900 50">
+  <defs>
+    <style>
+      .bg { fill: #050505; }
+      .fl {
+        stroke: #e8c874;
+        stroke-width: 1;
+        fill: none;
+        opacity: 0.55;
+      }
+      .dot {
+        fill: #e8c874;
+        opacity: 0.8;
+      }
+      .shimmer {
+        fill: #fff3d6;
+        animation: sh 3.5s ease-in-out infinite;
+      }
+      @keyframes sh {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="50"/>
+  <line x1="60" y1="25" x2="410" y2="25" class="fl"/>
+  <line x1="490" y1="25" x2="840" y2="25" class="fl"/>
+  <circle cx="450" cy="25" r="5" class="dot"/>
+  <path d="M440,25 L450,15 L460,25 L450,35 Z" fill="none" stroke="#e8c874" stroke-width="1" class="shimmer"/>
+  <circle cx="420" cy="25" r="2" class="dot" opacity="0.5"/>
+  <circle cx="480" cy="25" r="2" class="dot" opacity="0.5"/>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+  <defs>
+    <filter id="sealglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .ring {
+        fill: none;
+        stroke: #e8c874;
+        stroke-width: 1.5;
+      }
+      .ring-outer {
+        fill: none;
+        stroke: #e8c874;
+        stroke-width: 1;
+        opacity: 0.5;
+        stroke-dasharray: 2 4;
+        transform-origin: 130.0px 130.0px;
+        animation: rotate 40s linear infinite;
+      }
+      @keyframes rotate {
+        to { transform: rotate(360deg); }
+      }
+      .leaf {
+        fill: none;
+        stroke: #e8c874;
+        stroke-width: 1.3;
+        opacity: 0.85;
+      }
+      .monogram {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 46px;
+        fill: #e8c874;
+        text-anchor: middle;
+      }
+      .tagline {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 10px;
+        letter-spacing: 3px;
+        fill: #e8c874;
+        opacity: 0.75;
+        text-anchor: middle;
+      }
+      .shimmer {
+        fill: #fff3d6;
+        animation: twinkle 3s ease-in-out infinite;
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 0.9; }
+      }
+    </style>
+  </defs>
+
+  <circle cx="130.0" cy="130.0" r="118" class="ring-outer"/>
+  <g filter="url(#sealglow)">
+    <circle cx="130.0" cy="130.0" r="100" class="ring"/>
+    <circle cx="130.0" cy="130.0" r="92" class="ring" opacity="0.5"/>
+
+    <ellipse cx="61.7" cy="164.2" rx="10" ry="4.2" transform="rotate(100.0,61.7,164.2)" class="leaf"/><ellipse cx="45.1" cy="164.5" rx="10" ry="4.2" transform="rotate(123.33333333333333,45.1,164.5)" class="leaf"/><ellipse cx="27.6" cy="155.1" rx="10" ry="4.2" transform="rotate(146.66666666666666,27.6,155.1)" class="leaf"/><ellipse cx="14.5" cy="136.0" rx="10" ry="4.2" transform="rotate(170.0,14.5,136.0)" class="leaf"/><ellipse cx="10.8" cy="109.6" rx="10" ry="4.2" transform="rotate(193.33333333333331,10.8,109.6)" class="leaf"/><ellipse cx="20.0" cy="80.8" rx="10" ry="4.2" transform="rotate(216.66666666666669,20.0,80.8)" class="leaf"/><ellipse cx="42.9" cy="56.1" rx="10" ry="4.2" transform="rotate(240.0,42.9,56.1)" class="leaf"/>
+    <ellipse cx="198.3" cy="164.2" rx="10" ry="4.2" transform="rotate(60.0,198.3,164.2)" class="leaf"/><ellipse cx="214.9" cy="164.5" rx="10" ry="4.2" transform="rotate(36.66666666666667,214.9,164.5)" class="leaf"/><ellipse cx="232.4" cy="155.1" rx="10" ry="4.2" transform="rotate(13.333333333333336,232.4,155.1)" class="leaf"/><ellipse cx="245.5" cy="136.0" rx="10" ry="4.2" transform="rotate(-10.0,245.5,136.0)" class="leaf"/><ellipse cx="249.2" cy="109.6" rx="10" ry="4.2" transform="rotate(-33.33333333333333,249.2,109.6)" class="leaf"/><ellipse cx="240.0" cy="80.8" rx="10" ry="4.2" transform="rotate(-56.66666666666667,240.0,80.8)" class="leaf"/><ellipse cx="217.1" cy="56.1" rx="10" ry="4.2" transform="rotate(-80.0,217.1,56.1)" class="leaf"/>
+
+    <text x="130.0" y="146.0" class="monogram">VS</text>
+
+    <path d="M60.0,130.0 A70,70 0 0,1 200.0,130.0" fill="none" stroke="#e8c874" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <path d="M126.0,34.0 L134.0,34.0 L130.0,26.0 Z" class="shimmer"/>
+  <path d="M126.0,226.0 L134.0,226.0 L130.0,234.0 Z" class="shimmer" style="animation-delay:1.5s"/>
+</svg>

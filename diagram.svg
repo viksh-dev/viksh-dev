@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <defs>
+    <style>
+      .bg { fill: #050505; }
+      .connector {
+        stroke: #e8c874;
+        stroke-width: 1;
+        stroke-dasharray: 4 5;
+        fill: none;
+        opacity: 0.4;
+      }
+      .node-ring {
+        fill: none;
+        stroke: #e8c874;
+        stroke-width: 1.5;
+      }
+      .node-icon {
+        fill: none;
+        stroke: #e8c874;
+        stroke-width: 1.5;
+      }
+      .node-icon-outline {
+        fill: none;
+        stroke: #e8c874;
+        stroke-width: 1.5;
+      }
+      .node-icon-line {
+        stroke: #e8c874;
+        stroke-width: 1.5;
+      }
+      .node-label {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 12px;
+        letter-spacing: 2px;
+        fill: #e8c874;
+        opacity: 0.85;
+      }
+      .flow-dot {
+        fill: #fff3d6;
+      }
+      .caption {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 14px;
+        fill: #e8c874;
+        opacity: 0.55;
+      }
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="220"/>
+
+  <path id="path0" class="connector" d="M134,110 L301,110"/><path id="path1" class="connector" d="M369,110 L536,110"/><path id="path2" class="connector" d="M604,110 L766,110"/>
+  
+    <circle r="4" class="flow-dot">
+      <animateMotion dur="3.6s" begin="0.0s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path0"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.6s" begin="0.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="4" class="flow-dot">
+      <animateMotion dur="3.6s" begin="0.9s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path1"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.6s" begin="0.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="4" class="flow-dot">
+      <animateMotion dur="3.6s" begin="1.8s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path2"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+  
+    <g>
+      <circle cx="100" cy="110" r="30" class="node-ring">
+        <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.2s" begin="0.0s" repeatCount="indefinite"/>
+      </circle>
+      
+        <rect x="86" y="92" width="28" height="36" rx="2" class="node-icon"/>
+        <line x1="92" y1="101" x2="108" y2="101" class="node-icon-line"/>
+        <line x1="92" y1="110" x2="108" y2="110" class="node-icon-line"/>
+        <line x1="92" y1="119" x2="103" y2="119" class="node-icon-line"/>
+      <text x="100" y="162" text-anchor="middle" class="node-label">REQUEST</text>
+    </g>
+    <g>
+      <circle cx="335" cy="110" r="30" class="node-ring">
+        <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.2s" begin="0.4s" repeatCount="indefinite"/>
+      </circle>
+      
+        <path d="M323,124 L345,100 L351,106 L329,130 L321,132 Z" class="node-icon"/>
+        <line x1="341" y1="104" x2="347" y2="110" class="node-icon-line"/>
+      <text x="335" y="162" text-anchor="middle" class="node-label">DRAFT</text>
+    </g>
+    <g>
+      <circle cx="570" cy="110" r="30" class="node-ring">
+        <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+      </circle>
+      
+        <circle cx="570" cy="110" r="10" class="node-icon-outline"/>
+        <line x1="570" y1="110" x2="586.0" y2="110.0" class="node-icon-line"/><line x1="570" y1="110" x2="581.3137084989847" y2="121.31370849898477" class="node-icon-line"/><line x1="570" y1="110" x2="570.0" y2="126.0" class="node-icon-line"/><line x1="570" y1="110" x2="558.6862915010153" y2="121.31370849898477" class="node-icon-line"/><line x1="570" y1="110" x2="554.0" y2="110.0" class="node-icon-line"/><line x1="570" y1="110" x2="558.6862915010153" y2="98.68629150101523" class="node-icon-line"/><line x1="570" y1="110" x2="570.0" y2="94.0" class="node-icon-line"/><line x1="570" y1="110" x2="581.3137084989847" y2="98.68629150101523" class="node-icon-line"/>
+      <text x="570" y="162" text-anchor="middle" class="node-label">AUTOMATE</text>
+    </g>
+    <g>
+      <circle cx="800" cy="110" r="30" class="node-ring">
+        <animate attributeName="opacity" values="0.35;0.7;0.35" dur="3.2s" begin="1.2000000000000002s" repeatCount="indefinite"/>
+      </circle>
+      
+        <circle cx="800" cy="110" r="16" class="node-icon-outline"/>
+        <path d="M793,110 L798,117 L808,102" class="node-icon-line" stroke-width="2.5"/>
+      <text x="800" y="162" text-anchor="middle" class="node-label">DELIVER</text>
+    </g>
+</svg>

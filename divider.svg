@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="90" viewBox="0 0 900 90">
+  <defs>
+    <style>
+      .bg { fill: #050505; }
+      .motto {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 20px;
+        fill: #e8c874;
+        opacity: 0;
+        animation: fadeIn 1.2s ease-out 1.6s forwards;
+      }
+      @keyframes fadeIn {
+        to { opacity: 0.9; }
+      }
+      .signline {
+        stroke: #e8c874;
+        stroke-width: 1.5;
+        fill: none;
+        stroke-dasharray: 780;
+        stroke-dashoffset: 780;
+        animation: draw 2.6s ease-in-out infinite;
+      }
+      @keyframes draw {
+        0% { stroke-dashoffset: 780; }
+        55% { stroke-dashoffset: 0; }
+        85% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+      }
+      .nib {
+        fill: #e8c874;
+        offset-path: path('M60,60 L840,60');
+        animation: nibmove 2.6s ease-in-out infinite;
+      }
+      @keyframes nibmove {
+        0% { offset-distance: 0%; opacity: 1; }
+        55% { offset-distance: 100%; opacity: 1; }
+        70% { opacity: 0; }
+        100% { opacity: 0; offset-distance: 100%; }
+      }
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="90"/>
+  <path class="signline" d="M60,60 L840,60"/>
+  <circle class="nib" r="4"/>
+</svg>
